@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FocalPoint — Admin-HR Guidance</title>
+<link rel="icon" type="icon" href="\pictures\icon.jpg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- SCREEN: HOME                                                  -->
+<!-- ============================================================ -->
+<section class="screen is-active" data-screen="home">
+
+  <header class="home-brand">
+    <div class="home-brand__mark">
+      <!-- LOGO SLOT: replace src in images/logo.png with the actual PNG logo -->
+      <img class="home-brand__logo" src="pictures\logo.png" alt="FocalPoint logo" onerror="this.classList.add('img-slot--empty')">
+      <span class="home-brand__title">FocalPoint</span>
+    </div>
+
+    <nav class="home-nav">
+      <button class="home-nav__btn" type="button" data-nav="about-us">About Us</button>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero__content">
+      <h1 class="hero__headline">Welcome to Support Hub</h1>
+      <p class="hero__subtext">Know who to go to, what to fill out, and what happens next. <strong>All in one place.</strong></p>
+      <button class="btn btn--pill" type="button" data-nav="main-menu">Let's get started.</button>
+    </div>
+
+    <div class="hero__mascot">
+      <!-- MASCOT SLOT: replace src in images/choon.png with Choon's PNG, transparent background -->
+      <img src="pictures\choonhalloween.png" alt="Choon, the FocalPoint train mascot" onerror="this.classList.add('img-slot--empty')">
+    </div>
+  </div>
+
+  <div class="steps">
+    <article class="step-card">
+      <span class="step-card__index">Step 1</span>
+      <h3 class="step-card__title">Find your concern</h3>
+      <p class="step-card__text">Choose the concern that best matches your needs.</p>
+    </article>
+    <article class="step-card">
+      <span class="step-card__index">Step 2</span>
+      <h3 class="step-card__title">Follow the process</h3>
+      <p class="step-card__text">Explore steps and resources to help you move forward.</p>
+    </article>
+    <article class="step-card">
+      <span class="step-card__index">Step 3</span>
+      <h3 class="step-card__title">Connect with the focal person</h3>
+      <p class="step-card__text">Need further assistance? Check the directory to find the right person to assist you.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SCREEN: ABOUT US                                              -->
+<!-- ============================================================ -->
+<section class="screen" data-screen="about-us">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="home">Back</button>
+  </header>
+
+  <div class="page-center page-center--wide">
+    <h1 class="page-heading">About Us</h1>
+
+    <div class="about-content">
+        <section class="about-section"> <!-- Intro / context -->
+          <p class="about-section__text">The <span class="about-accent">Support Division</span> handles various functions that provide essential services and assistance to personnel and different units of the organization, including <span class="about-accent about-accent--red">Communications, Recruitment and Administrative Services, Plantilla Affairs, Salary Claims, Assets, and Data Management</span>.</p>
+          <p class="about-section__text">With information, forms, processes, and requests currently coming from different channels, there is an opportunity to establish a centralized and accessible platform where personnel can easily find the information they need, access relevant forms and resources, understand procedures, and connect with the appropriate Support Division focal person.</p>
+          <p class="about-section__text">Support Hub aims to serve as a one-stop portal for Support Division information and services, improving accessibility, coordination, transparency, and overall service delivery.</p>
+        </section>
+
+        <section class="about-section">
+          <h3 class="about-section__title">Mandate</h3>
+          <p class="about-section__text">To provide accessible, responsive, efficient, and reliable administrative and support services that enable personnel and organizational units to effectively carry out their respective functions and contribute to overall operational excellence.</p>
+        </section>
+
+        <section class="about-section">
+          <h3 class="about-section__title">Vision</h3>
+          <p class="about-section__text">A responsive, connected, and service-driven Support Division where information is accessible, processes are seamless, and every employee is empowered to get the support they need.</p>
+        </section>
+
+        <section class="about-section">
+          <h3 class="about-section__title">Mission</h3>
+          <p class="about-section__text">To deliver timely, transparent, and people-centered support services through streamlined processes, accessible information, and responsive assistance—enabling every unit and employee to work more efficiently and effectively.</p>
+        </section>
+
+        <section class="about-section">
+          <h3 class="about-section__title">Core Values</h3>
+          <div class="values-list">
+            <p class="values-list__item"><strong>Service</strong>: We put the needs of our people and the organization at the heart of everything we do.</p>
+            <p class="values-list__item"><strong>Responsiveness</strong>: We listen, act with urgency, and provide timely and appropriate assistance.</p>
+            <p class="values-list__item"><strong>Transparency</strong>: We promote clear information, accessible processes, and accountability in every transaction.</p>
+            <p class="values-list__item"><strong>Excellence</strong>: We continuously improve our systems, processes, and services to deliver quality results.</p>
+            <p class="values-list__item"><strong>Innovation</strong>: We embrace technology and better ways of working to make services simpler, faster, and more accessible.</p>
+            <p class="values-list__item"><strong>Collaboration</strong>: We work across units and functions to provide coordinated and effective support.</p>
+          </div>
+        </section>
+
+
+    </div>
+
+    <div class="about-embed">
+      <!-- APPS SCRIPT EMBED: set the URL in DRIVE_LINKS.miscellaneous.aboutUsAppsScript in script.js -->
+      <iframe class="about-embed__frame" data-embed-key="aboutUsAppsScript" title="About Us — additional info" src="https://script.google.com/macros/s/AKfycbydihZkMn9c01J7IRRVHF_LY9T1enUf0M9LEEuj1MNEhYoV2PLdRJTHGaddmohl0s-1cA/exec"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SCREEN: MAIN MENU (page 2)                                    -->
+<!-- ============================================================ -->
+<section class="screen" data-screen="main-menu">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="home">Back</button>
+  </header>
+
+  <div class="page-center">
+    <h1 class="page-heading">Welcome, mga Ka-Riles!</h1>
+    <p class="page-subtext">Where would you like to go?</p>
+
+    <div class="choice-grid choice-grid--3" data-drive-group="miscellaneous">
+      <button class="choice-card" type="button" data-nav="concern-category">
+        <span class="choice-card__title">Service</span>
+      </button>
+      <button class="choice-card" type="button" data-nav="memorandums-menu">
+        <span class="choice-card__title">Memorandums</span>
+      </button>
+      <a class="choice-card" data-drive-key="wellnessCalendar" href="#" target="_blank" rel="noopener">
+        <span class="choice-card__title">Wellness Calendar</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SCREEN: MEMORANDUMS (page 3)                                  -->
+<!-- ============================================================ -->
+<section class="screen" data-screen="memorandums-menu">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="main-menu">Back</button>
+  </header>
+
+  <div class="page-center">
+    <h1 class="page-heading">Memorandums</h1>
+    <p class="page-subtext">Pick a team to view their memorandums.</p>
+    <nav class="menu-list" data-drive-group="memorandums">
+      <a class="menu-item" data-drive-key="hrmd" href="#" target="_blank" rel="noopener">Special Order</a>
+      <a class="menu-item" data-drive-key="hrdd" href="#" target="_blank" rel="noopener">Office Order</a>
+      <a class="menu-item" data-drive-key="dataasset" href="#" target="_blank" rel="noopener">Memorandum</a>
+      <a class="menu-item" data-drive-key="wellness" href="#" target="_blank" rel="noopener">Department Order</a>
+    </nav>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SCREEN: CONCERN CATEGORY (page 2)                             -->
+<!-- ============================================================ -->
+<section class="screen" data-screen="concern-category">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="main-menu">Back</button>
+  </header>
+
+  <div class="page-center">
+    <h1 class="page-heading">What is your concern about?</h1>
+    <div class="choice-grid choice-grid--4">
+      <button class="choice-card" type="button" data-concern="hrmd">
+        <span class="choice-card__title">HRMD Concerns</span>
+        <span class="choice-card__subtitle">Your guide to compensation, benefits, leave, and employee transitions.</span>
+      </button>
+      <button class="choice-card" type="button" data-concern="hrdd">
+        <span class="choice-card__title">HRDD Concerns</span>
+        <span class="choice-card__subtitle">Supporting your growth through learning, travel, performance, and employee engagement.</span>
+      </button>
+      <button class="choice-card" type="button" data-concern="dataasset">
+        <span class="choice-card__title">Data and Assets Management Concerns</span>
+        <span class="choice-card__subtitle">For employee records, data requests, property, and asset-related concerns.</span>
+      </button>
+      <button class="choice-card" type="button" data-concern="wellness">
+        <span class="choice-card__title">Wellness and Communication Concerns</span>
+        <span class="choice-card__subtitle">Promoting clear communication, employee well-being, and a supportive workplace.</span>
+      </button>
+      <button class="choice-card" type="button" data-concern="renewal">
+        <span class="choice-card__title">Renewal and Recruitment Concerns</span>
+        <span class="choice-card__subtitle">For hiring, contract renewal, onboarding, and offboarding.</span>
+      </button>
+      <button class="choice-card" type="button" data-concern="salary">
+        <span class="choice-card__title">Salary Claims Concerns</span>
+        <span class="choice-card__subtitle">For payroll, salary claims, and related wellness leave concerns.</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SCREEN: TYPE OF ENGAGEMENT (page 3)                           -->
+<!-- -------------------------------------------------------------->
+<!-- Reached only after a concern is picked on the Concern Category -->
+<!-- screen. Both buttons send the visitor on to that concern's own -->
+<!-- menu screen (see data-concern / data-engagement handling in    -->
+<!-- script.js). Every concern's list is defined once and shown for -->
+<!-- both engagement types by default; give any <a class="menu-item">-->
+<!-- a data-engagement-only="plantilla" or "jocos" attribute to make -->
+<!-- that one item appear only for that engagement type.             -->
+<!-- ============================================================ -->
+<section class="screen" data-screen="type-of-engagement">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="concern-category">Back</button>
+  </header>
+
+  <div class="page-center">
+    <span class="flow-breadcrumb" data-selected-concern></span>
+    <h1 class="page-heading">Type of Engagement</h1>
+    <p class="page-subtext">To help us guide you through the right process, please select the type of engagement you are working with.</p>
+
+    <div class="choice-grid choice-grid--2">
+      <button class="choice-card" type="button" data-engagement="plantilla">
+        <span class="choice-card__title">Plantilla</span>
+      </button>
+      <button class="choice-card" type="button" data-engagement="jocos">
+        <span class="choice-card__title">JO/COS</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SCREEN: HRMD MENU (page 4)                                    -->
+<!-- ============================================================ -->
+<section class="screen" data-screen="hrmd-menu">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="type-of-engagement">Back</button>
+  </header>
+
+  <div class="page-center">
+    <span class="flow-breadcrumb" data-flow-breadcrumb></span>
+    <h1 class="page-heading">What Do You Need Help With?</h1>
+    <nav class="menu-list" data-drive-group="hrmd">
+      <a class="menu-item" data-drive-key="compensation" href="#" target="_blank" rel="noopener">Compensation and Benefits</a>
+      <a class="menu-item" data-drive-key="leave" href="#" target="_blank" rel="noopener">Leave Concerns</a>
+      <a class="menu-item" data-drive-key="raros" href="#" target="_blank" rel="noopener">RAROS</a>
+      <a class="menu-item" data-drive-key="dtr" href="#" target="_blank" rel="noopener">DTR</a>
+      <a class="menu-item" data-drive-key="onboarding" href="#" target="_blank" rel="noopener">Onboarding</a>
+      <a class="menu-item" data-drive-key="offboarding" href="#" target="_blank" rel="noopener">Offboarding</a>
+    </nav>
+  </div>
+</section>
+
+<section class="screen" data-screen="hrmd-directory">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="home">Back to Homepage</button>
+  </header>
+  <div class="page-center">
+    <h1 class="page-heading">HRMD Affairs Directory</h1>
+    <div class="contact-list" data-contact-group="hrmd"></div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SCREEN: HRDD MENU (page 4)                                    -->
+<!-- ============================================================ -->
+<section class="screen" data-screen="hrdd-menu">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="type-of-engagement">Back</button>
+  </header>
+
+  <div class="page-center">
+    <span class="flow-breadcrumb" data-flow-breadcrumb></span>
+    <h1 class="page-heading">What Do You Need Help With?</h1>
+    <nav class="menu-list" data-drive-group="hrdd">
+      <a class="menu-item" data-drive-key="official-travel" href="#" target="_blank" rel="noopener">Official Foreign Travels</a>
+      <a class="menu-item" data-drive-key="non-official-travel" href="#" target="_blank" rel="noopener">Non Official Foreign Travels</a>
+      <a class="menu-item" data-drive-key="dotcea" href="#" target="_blank" rel="noopener">DOTCEA</a>
+      <a class="menu-item" data-drive-key="trainings" href="#" target="_blank" rel="noopener">Trainings</a>
+      <a class="menu-item" data-drive-key="scholarships" href="#" target="_blank" rel="noopener">Scholarships</a>
+      <a class="menu-item" data-drive-key="spms" href="#" target="_blank" rel="noopener">SPMS</a>
+    </nav>
+  </div>
+</section>
+
+<section class="screen" data-screen="hrdd-directory">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="home">Back to Homepage</button>
+  </header>
+  <div class="page-center">
+    <h1 class="page-heading">HRDD Affairs Directory</h1>
+    <div class="contact-list" data-contact-group="hrdd"></div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SCREEN: DATA AND ASSET MANAGEMENT MENU (page 4, shared)       -->
+<!-- ============================================================ -->
+<section class="screen" data-screen="dataasset-menu">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="type-of-engagement">Back</button>
+  </header>
+
+  <div class="page-center">
+    <span class="flow-breadcrumb" data-flow-breadcrumb></span>
+    <h1 class="page-heading">What Do You Need Help With?</h1>
+    <nav class="menu-list" data-drive-group="dataasset">
+      <a class="menu-item" data-drive-key="data-management" href="#" target="_blank" rel="noopener">Data Management</a>
+      <a class="menu-item" data-drive-key="asset" href="#" target="_blank" rel="noopener">Asset</a>
+    </nav>
+  </div>
+</section>
+
+<section class="screen" data-screen="dataasset-directory">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="dataasset-menu">Back</button>
+  </header>
+  <div class="page-center">
+    <h1 class="page-heading">Data and Asset Management Directory</h1>
+    <div class="contact-list" data-contact-group="dataasset"></div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SCREEN: WELLNESS AND COMMUNICATION MENU (page 4)              -->
+<!-- ============================================================ -->
+<section class="screen" data-screen="wellness-menu">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="type-of-engagement">Back</button>
+  </header>
+
+  <div class="page-center">
+    <span class="flow-breadcrumb" data-flow-breadcrumb></span>
+    <h1 class="page-heading">What Do You Need Help With?</h1>
+    <nav class="menu-list" data-drive-group="wellness">
+      <a class="menu-item" data-drive-key="communication" href="#" target="_blank" rel="noopener">Communication</a>
+    </nav>
+  </div>
+</section>
+
+<section class="screen" data-screen="wellness-directory">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="wellness-menu">Back</button>
+  </header>
+  <div class="page-center">
+    <h1 class="page-heading">Wellness and Communication Directory</h1>
+    <div class="contact-list" data-contact-group="wellness"></div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SCREEN: RENEWAL AND RECRUITMENT MENU (page 4)                 -->
+<!-- ============================================================ -->
+<section class="screen" data-screen="renewal-menu">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="type-of-engagement">Back</button>
+  </header>
+
+  <div class="page-center">
+    <span class="flow-breadcrumb" data-flow-breadcrumb></span>
+    <h1 class="page-heading">What Do You Need Help With?</h1>
+    <nav class="menu-list" data-drive-group="renewal">
+      <a class="menu-item" data-drive-key="hiring" href="#" target="_blank" rel="noopener">Hiring</a>
+      <a class="menu-item" data-drive-key="renewal" href="#" target="_blank" rel="noopener">Renewal</a>
+      <a class="menu-item" data-drive-key="onboarding" href="#" target="_blank" rel="noopener">Onboarding</a>
+      <a class="menu-item" data-drive-key="offboarding" href="#" target="_blank" rel="noopener">Offboarding</a>
+    </nav>
+  </div>
+</section>
+
+<section class="screen" data-screen="renewal-directory">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="renewal-menu">Back</button>
+  </header>
+  <div class="page-center">
+    <h1 class="page-heading">Renewal and Recruitment Directory</h1>
+    <div class="contact-list" data-contact-group="renewal"></div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SCREEN: SALARY CLAIMS MENU (page 4)                           -->
+<!-- ============================================================ -->
+<section class="screen" data-screen="salary-menu">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="type-of-engagement">Back</button>
+  </header>
+
+  <div class="page-center">
+    <span class="flow-breadcrumb" data-flow-breadcrumb></span>
+    <h1 class="page-heading">What Do You Need Help With?</h1>
+    <nav class="menu-list" data-drive-group="salary">
+      <a class="menu-item" data-drive-key="salary-dashboard" href="#" target="_blank" rel="noopener">Salary Dashboard</a>
+      <a class="menu-item" data-drive-key="wellness-leave" data-engagement-only="jocos" href="#" target="_blank" rel="noopener">Wellness Leave for JO/COS</a>
+    </nav>
+  </div>
+</section>
+
+<section class="screen" data-screen="salary-directory">
+  <header class="page-bar">
+    <span class="page-bar__title" data-nav="home">FocalPoint</span>
+    <button class="link-back" type="button" data-nav="salary-menu">Back</button>
+  </header>
+  <div class="page-center">
+    <h1 class="page-heading">Salary Claims Directory</h1>
+    <div class="contact-list" data-contact-group="salary"></div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- EMBEDDED MODAL (pop-up) — reused for any [data-modal-key] link -->
+<!-- ============================================================ -->
+<div class="modal-overlay" id="embed-modal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="embed-modal-title">
+    <header class="modal__header">
+      <h2 class="modal__title" id="embed-modal-title">Wellness Calendar</h2>
+      <div class="modal__actions">
+        <a class="modal__open-new" id="embed-modal-open-new" href="#" target="_blank" rel="noopener">Open in new tab ↗</a>
+        <button class="modal__close" type="button" aria-label="Close" data-modal-close>&times;</button>
+      </div>
+    </header>
+    <div class="modal__body">
+      <iframe id="embed-modal-frame" class="modal__frame" title="Embedded content"></iframe>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
